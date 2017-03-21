@@ -1,0 +1,1287 @@
+[JX-RATIO]					#进线变比参数（寄存器地址43000~43011）
+	M1 : 1000 5 
+	M2 : 1000 5 
+	M3 : 1000 5 
+	M4 : 1000 5 
+	M5 : 1000 5 
+	M6 : 1000 5 
+[YC-RATIO]					#馈线电流变比（寄存器地址43020~43467）
+	M1 : 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 
+	M2 : 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 
+	M3 : 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 
+	M4 : 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 
+	M5 : 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 
+	M6 : 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 
+	M7 : 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 100 50 
+[YC-RATED]					#馈线电流额定值（寄存器地址43470~43693）
+	M1 : 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
+	M2 : 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
+	M3 : 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
+	M4 : 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
+	M5 : 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
+	M6 : 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
+	M7 : 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
+[JX-EXCEED]					#进线模块越限参数（寄存器地址43700~43945）
+	<M1>
+		overcurrent : 1500 2000 1300 60000 ffff 0000 
+		undercurrent : 10 30 60000 ffff 0000 
+		lowvoltage : 204 216 60000 ffff 0000 
+		overvoltage : 288 260 60000 ffff 0000 
+		main-R : 30 30 60000 ffff 0000 
+		temperature1 : 500 450 60000 ffff 0000 
+		temperature2 : 500 450 60000 ffff 0000 
+		temperature3 : 500 450 60000 ffff 0000 
+	<M2>
+		overcurrent : 1500 2000 1300 60000 ffff 0000 
+		undercurrent : 10 30 60000 ffff 0000 
+		lowvoltage : 204 216 60000 ffff 0000 
+		overvoltage : 288 260 60000 ffff 0000 
+		main-R : 30 30 60000 ffff 0000 
+		temperature1 : 500 450 60000 ffff 0000 
+		temperature2 : 500 450 60000 ffff 0000 
+		temperature3 : 500 450 60000 ffff 0000 
+	<M3>
+		overcurrent : 1500 2000 1300 60000 ffff 0000 
+		undercurrent : 10 30 60000 ffff 0000 
+		lowvoltage : 204 216 60000 ffff 0000 
+		overvoltage : 288 260 60000 ffff 0000 
+		main-R : 30 30 60000 ffff 0000 
+		temperature1 : 500 450 60000 ffff 0000 
+		temperature2 : 500 450 60000 ffff 0000 
+		temperature3 : 500 450 60000 ffff 0000 
+	<M4>
+		overcurrent : 1500 2000 1300 60000 ffff 0000 
+		undercurrent : 10 30 60000 ffff 0000 
+		lowvoltage : 204 216 60000 ffff 0000 
+		overvoltage : 288 260 60000 ffff 0000 
+		main-R : 30 30 60000 ffff 0000 
+		temperature1 : 500 450 60000 ffff 0000 
+		temperature2 : 500 450 60000 ffff 0000 
+		temperature3 : 500 450 60000 ffff 0000 
+	<M5>
+		overcurrent : 1500 2000 1300 60000 ffff 0000 
+		undercurrent : 10 30 60000 ffff 0000 
+		lowvoltage : 204 216 60000 ffff 0000 
+		overvoltage : 288 260 60000 ffff 0000 
+		main-R : 30 30 60000 ffff 0000 
+		temperature1 : 500 450 60000 ffff 0000 
+		temperature2 : 500 450 60000 ffff 0000 
+		temperature3 : 500 450 60000 ffff 0000 
+	<M6>
+		overcurrent : 1500 2000 1300 60000 ffff 0000 
+		undercurrent : 10 30 60000 ffff 0000 
+		lowvoltage : 204 216 60000 ffff 0000 
+		overvoltage : 288 260 60000 ffff 0000 
+		main-R : 30 30 60000 ffff 0000 
+		temperature1 : 500 450 60000 ffff 0000 
+		temperature2 : 500 450 60000 ffff 0000 
+		temperature3 : 500 450 60000 ffff 0000 
+[YC-EXCEED]					#遥测模块越限参数（寄存器地址43950~46413）
+		<M1-1>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-2>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-3>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-4>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-5>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-6>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-7>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-8>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-9>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-10>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-11>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-12>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-13>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-14>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-15>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-16>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-17>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-18>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-19>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-20>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-21>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-22>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-23>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-24>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-25>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-26>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-27>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-28>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-29>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-30>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-31>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M1-32>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+
+		<M2-1>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-2>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-3>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-4>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-5>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-6>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-7>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-8>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-9>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-10>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-11>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-12>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-13>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-14>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-15>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-16>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-17>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-18>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-19>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-20>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-21>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-22>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-23>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-24>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-25>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-26>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-27>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-28>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-29>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-30>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-31>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M2-32>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+
+		<M3-1>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-2>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-3>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-4>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-5>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-6>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-7>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-8>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-9>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-10>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-11>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-12>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-13>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-14>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-15>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-16>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-17>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-18>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-19>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-20>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-21>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-22>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-23>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-24>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-25>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-26>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-27>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-28>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-29>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-30>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-31>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M3-32>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+
+		<M4-1>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-2>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-3>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-4>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-5>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-6>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-7>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-8>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-9>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-10>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-11>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-12>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-13>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-14>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-15>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-16>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-17>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-18>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-19>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-20>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-21>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-22>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-23>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-24>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-25>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-26>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-27>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-28>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-29>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-30>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-31>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M4-32>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+
+		<M5-1>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-2>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-3>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-4>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-5>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-6>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-7>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-8>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-9>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-10>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-11>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-12>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-13>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-14>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-15>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-16>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-17>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-18>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-19>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-20>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-21>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-22>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-23>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-24>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-25>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-26>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-27>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-28>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-29>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-30>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-31>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M5-32>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+
+		<M6-1>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-2>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-3>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-4>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-5>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-6>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-7>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-8>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-9>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-10>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-11>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-12>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-13>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-14>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-15>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-16>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-17>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-18>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-19>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-20>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-21>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-22>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-23>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-24>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-25>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-26>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-27>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-28>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-29>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-30>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-31>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M6-32>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+
+		<M7-1>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-2>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-3>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-4>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-5>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-6>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-7>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-8>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-9>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-10>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-11>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-12>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-13>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-14>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-15>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-16>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-17>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-18>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-19>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-20>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-21>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-22>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-23>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-24>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-25>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-26>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-27>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-28>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-29>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-30>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-31>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+		<M7-32>
+			overcurrent : 300 500 200 60000 ffff 0000 
+			undercurrent : 10 30 60000 ffff 0000 
+
+[YU-EXCEED]					#YU 越限参数（寄存器地址46420~47539）
+		<M1>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M2>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M3>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M4>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M5>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M6>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M7>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M8>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M9>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M10>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M11>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M12>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M13>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+		<M14>
+			zl1 : 5000 4000 6000 ffff 0000 
+			zl2 : 5000 4000 6000 ffff 0000 
+			zl3 : 5000 4000 6000 ffff 0000 
+			zl4 : 5000 4000 6000 ffff 0000 
+			zl5 : 5000 4000 6000 ffff 0000 
+			zl6 : 5000 4000 6000 ffff 0000 
+			zl7 : 5000 4000 6000 ffff 0000 
+			zl8 : 5000 4000 6000 ffff 0000 
+			zl9 : 5000 4000 6000 ffff 0000 
+			zl10 : 5000 4000 6000 ffff 0000 
+			zl11 : 5000 4000 6000 ffff 0000 
+			zl12 : 5000 4000 6000 ffff 0000 
+			zl13 : 5000 4000 6000 ffff 0000 
+			zl14 : 5000 4000 6000 ffff 0000 
+			zl15 : 5000 4000 6000 ffff 0000 
+			zl16 : 5000 4000 6000 ffff 0000 
+
+[JY-EXCEED]						#JY 越限参数（寄存器地址47550~48669）
+		<M1>
+			zl1 : 30 35 60000 ffff 0000 
+			zl2 : 30 35 60000 ffff 0000 
+			zl3 : 30 35 60000 ffff 0000 
+			zl4 : 30 35 60000 ffff 0000 
+			zl5 : 30 35 60000 ffff 0000 
+			zl6 : 30 35 60000 ffff 0000 
+			zl7 : 30 35 60000 ffff 0000 
+			zl8 : 30 35 60000 ffff 0000 
+			zl9 : 30 35 60000 ffff 0000 
+			zl10 : 30 35 60000 ffff 0000 
+			zl11 : 30 35 60000 ffff 0000 
+			zl12 : 30 35 60000 ffff 0000 
+			zl13 : 30 35 60000 ffff 0000 
+			zl14 : 30 35 60000 ffff 0000 
+			zl15 : 30 35 60000 ffff 0000 
+			zl16 : 30 35 60000 ffff 0000 
+			zl17 : 30 35 60000 ffff 0000 
+			zl18 : 30 35 60000 ffff 0000 
+			zl19 : 30 35 60000 ffff 0000 
+			zl20 : 30 35 60000 ffff 0000 
+			zl21 : 30 35 60000 ffff 0000 
+			zl22 : 30 35 60000 ffff 0000 
+			zl23 : 30 35 60000 ffff 0000 
+			zl24 : 30 35 60000 ffff 0000 
+			zl25 : 30 35 60000 ffff 0000 
+			zl26 : 30 35 60000 ffff 0000 
+			zl27 : 30 35 60000 ffff 0000 
+			zl28 : 30 35 60000 ffff 0000 
+			zl29 : 30 35 60000 ffff 0000 
+			zl30 : 30 35 60000 ffff 0000 
+			zl31 : 30 35 60000 ffff 0000 
+			zl32 : 30 35 60000 ffff 0000 
+
+		<M2>
+			zl1 : 30 35 60000 ffff 0000 
+			zl2 : 30 35 60000 ffff 0000 
+			zl3 : 30 35 60000 ffff 0000 
+			zl4 : 30 35 60000 ffff 0000 
+			zl5 : 30 35 60000 ffff 0000 
+			zl6 : 30 35 60000 ffff 0000 
+			zl7 : 30 35 60000 ffff 0000 
+			zl8 : 30 35 60000 ffff 0000 
+			zl9 : 30 35 60000 ffff 0000 
+			zl10 : 30 35 60000 ffff 0000 
+			zl11 : 30 35 60000 ffff 0000 
+			zl12 : 30 35 60000 ffff 0000 
+			zl13 : 30 35 60000 ffff 0000 
+			zl14 : 30 35 60000 ffff 0000 
+			zl15 : 30 35 60000 ffff 0000 
+			zl16 : 30 35 60000 ffff 0000 
+			zl17 : 30 35 60000 ffff 0000 
+			zl18 : 30 35 60000 ffff 0000 
+			zl19 : 30 35 60000 ffff 0000 
+			zl20 : 30 35 60000 ffff 0000 
+			zl21 : 30 35 60000 ffff 0000 
+			zl22 : 30 35 60000 ffff 0000 
+			zl23 : 30 35 60000 ffff 0000 
+			zl24 : 30 35 60000 ffff 0000 
+			zl25 : 30 35 60000 ffff 0000 
+			zl26 : 30 35 60000 ffff 0000 
+			zl27 : 30 35 60000 ffff 0000 
+			zl28 : 30 35 60000 ffff 0000 
+			zl29 : 30 35 60000 ffff 0000 
+			zl30 : 30 35 60000 ffff 0000 
+			zl31 : 30 35 60000 ffff 0000 
+			zl32 : 30 35 60000 ffff 0000 
+
+		<M3>
+			zl1 : 30 35 60000 ffff 0000 
+			zl2 : 30 35 60000 ffff 0000 
+			zl3 : 30 35 60000 ffff 0000 
+			zl4 : 30 35 60000 ffff 0000 
+			zl5 : 30 35 60000 ffff 0000 
+			zl6 : 30 35 60000 ffff 0000 
+			zl7 : 30 35 60000 ffff 0000 
+			zl8 : 30 35 60000 ffff 0000 
+			zl9 : 30 35 60000 ffff 0000 
+			zl10 : 30 35 60000 ffff 0000 
+			zl11 : 30 35 60000 ffff 0000 
+			zl12 : 30 35 60000 ffff 0000 
+			zl13 : 30 35 60000 ffff 0000 
+			zl14 : 30 35 60000 ffff 0000 
+			zl15 : 30 35 60000 ffff 0000 
+			zl16 : 30 35 60000 ffff 0000 
+			zl17 : 30 35 60000 ffff 0000 
+			zl18 : 30 35 60000 ffff 0000 
+			zl19 : 30 35 60000 ffff 0000 
+			zl20 : 30 35 60000 ffff 0000 
+			zl21 : 30 35 60000 ffff 0000 
+			zl22 : 30 35 60000 ffff 0000 
+			zl23 : 30 35 60000 ffff 0000 
+			zl24 : 30 35 60000 ffff 0000 
+			zl25 : 30 35 60000 ffff 0000 
+			zl26 : 30 35 60000 ffff 0000 
+			zl27 : 30 35 60000 ffff 0000 
+			zl28 : 30 35 60000 ffff 0000 
+			zl29 : 30 35 60000 ffff 0000 
+			zl30 : 30 35 60000 ffff 0000 
+			zl31 : 30 35 60000 ffff 0000 
+			zl32 : 30 35 60000 ffff 0000 
+
+		<M4>
+			zl1 : 30 35 60000 ffff 0000 
+			zl2 : 30 35 60000 ffff 0000 
+			zl3 : 30 35 60000 ffff 0000 
+			zl4 : 30 35 60000 ffff 0000 
+			zl5 : 30 35 60000 ffff 0000 
+			zl6 : 30 35 60000 ffff 0000 
+			zl7 : 30 35 60000 ffff 0000 
+			zl8 : 30 35 60000 ffff 0000 
+			zl9 : 30 35 60000 ffff 0000 
+			zl10 : 30 35 60000 ffff 0000 
+			zl11 : 30 35 60000 ffff 0000 
+			zl12 : 30 35 60000 ffff 0000 
+			zl13 : 30 35 60000 ffff 0000 
+			zl14 : 30 35 60000 ffff 0000 
+			zl15 : 30 35 60000 ffff 0000 
+			zl16 : 30 35 60000 ffff 0000 
+			zl17 : 30 35 60000 ffff 0000 
+			zl18 : 30 35 60000 ffff 0000 
+			zl19 : 30 35 60000 ffff 0000 
+			zl20 : 30 35 60000 ffff 0000 
+			zl21 : 30 35 60000 ffff 0000 
+			zl22 : 30 35 60000 ffff 0000 
+			zl23 : 30 35 60000 ffff 0000 
+			zl24 : 30 35 60000 ffff 0000 
+			zl25 : 30 35 60000 ffff 0000 
+			zl26 : 30 35 60000 ffff 0000 
+			zl27 : 30 35 60000 ffff 0000 
+			zl28 : 30 35 60000 ffff 0000 
+			zl29 : 30 35 60000 ffff 0000 
+			zl30 : 30 35 60000 ffff 0000 
+			zl31 : 30 35 60000 ffff 0000 
+			zl32 : 30 35 60000 ffff 0000 
+
+		<M5>
+			zl1 : 30 35 60000 ffff 0000 
+			zl2 : 30 35 60000 ffff 0000 
+			zl3 : 30 35 60000 ffff 0000 
+			zl4 : 30 35 60000 ffff 0000 
+			zl5 : 30 35 60000 ffff 0000 
+			zl6 : 30 35 60000 ffff 0000 
+			zl7 : 30 35 60000 ffff 0000 
+			zl8 : 30 35 60000 ffff 0000 
+			zl9 : 30 35 60000 ffff 0000 
+			zl10 : 30 35 60000 ffff 0000 
+			zl11 : 30 35 60000 ffff 0000 
+			zl12 : 30 35 60000 ffff 0000 
+			zl13 : 30 35 60000 ffff 0000 
+			zl14 : 30 35 60000 ffff 0000 
+			zl15 : 30 35 60000 ffff 0000 
+			zl16 : 30 35 60000 ffff 0000 
+			zl17 : 30 35 60000 ffff 0000 
+			zl18 : 30 35 60000 ffff 0000 
+			zl19 : 30 35 60000 ffff 0000 
+			zl20 : 30 35 60000 ffff 0000 
+			zl21 : 30 35 60000 ffff 0000 
+			zl22 : 30 35 60000 ffff 0000 
+			zl23 : 30 35 60000 ffff 0000 
+			zl24 : 30 35 60000 ffff 0000 
+			zl25 : 30 35 60000 ffff 0000 
+			zl26 : 30 35 60000 ffff 0000 
+			zl27 : 30 35 60000 ffff 0000 
+			zl28 : 30 35 60000 ffff 0000 
+			zl29 : 30 35 60000 ffff 0000 
+			zl30 : 30 35 60000 ffff 0000 
+			zl31 : 30 35 60000 ffff 0000 
+			zl32 : 30 35 60000 ffff 0000 
+
+		<M6>
+			zl1 : 30 35 60000 ffff 0000 
+			zl2 : 30 35 60000 ffff 0000 
+			zl3 : 30 35 60000 ffff 0000 
+			zl4 : 30 35 60000 ffff 0000 
+			zl5 : 30 35 60000 ffff 0000 
+			zl6 : 30 35 60000 ffff 0000 
+			zl7 : 30 35 60000 ffff 0000 
+			zl8 : 30 35 60000 ffff 0000 
+			zl9 : 30 35 60000 ffff 0000 
+			zl10 : 30 35 60000 ffff 0000 
+			zl11 : 30 35 60000 ffff 0000 
+			zl12 : 30 35 60000 ffff 0000 
+			zl13 : 30 35 60000 ffff 0000 
+			zl14 : 30 35 60000 ffff 0000 
+			zl15 : 30 35 60000 ffff 0000 
+			zl16 : 30 35 60000 ffff 0000 
+			zl17 : 30 35 60000 ffff 0000 
+			zl18 : 30 35 60000 ffff 0000 
+			zl19 : 30 35 60000 ffff 0000 
+			zl20 : 30 35 60000 ffff 0000 
+			zl21 : 30 35 60000 ffff 0000 
+			zl22 : 30 35 60000 ffff 0000 
+			zl23 : 30 35 60000 ffff 0000 
+			zl24 : 30 35 60000 ffff 0000 
+			zl25 : 30 35 60000 ffff 0000 
+			zl26 : 30 35 60000 ffff 0000 
+			zl27 : 30 35 60000 ffff 0000 
+			zl28 : 30 35 60000 ffff 0000 
+			zl29 : 30 35 60000 ffff 0000 
+			zl30 : 30 35 60000 ffff 0000 
+			zl31 : 30 35 60000 ffff 0000 
+			zl32 : 30 35 60000 ffff 0000 
+
+		<M7>
+			zl1 : 30 35 60000 ffff 0000 
+			zl2 : 30 35 60000 ffff 0000 
+			zl3 : 30 35 60000 ffff 0000 
+			zl4 : 30 35 60000 ffff 0000 
+			zl5 : 30 35 60000 ffff 0000 
+			zl6 : 30 35 60000 ffff 0000 
+			zl7 : 30 35 60000 ffff 0000 
+			zl8 : 30 35 60000 ffff 0000 
+			zl9 : 30 35 60000 ffff 0000 
+			zl10 : 30 35 60000 ffff 0000 
+			zl11 : 30 35 60000 ffff 0000 
+			zl12 : 30 35 60000 ffff 0000 
+			zl13 : 30 35 60000 ffff 0000 
+			zl14 : 30 35 60000 ffff 0000 
+			zl15 : 30 35 60000 ffff 0000 
+			zl16 : 30 35 60000 ffff 0000 
+			zl17 : 30 35 60000 ffff 0000 
+			zl18 : 30 35 60000 ffff 0000 
+			zl19 : 30 35 60000 ffff 0000 
+			zl20 : 30 35 60000 ffff 0000 
+			zl21 : 30 35 60000 ffff 0000 
+			zl22 : 30 35 60000 ffff 0000 
+			zl23 : 30 35 60000 ffff 0000 
+			zl24 : 30 35 60000 ffff 0000 
+			zl25 : 30 35 60000 ffff 0000 
+			zl26 : 30 35 60000 ffff 0000 
+			zl27 : 30 35 60000 ffff 0000 
+			zl28 : 30 35 60000 ffff 0000 
+			zl29 : 30 35 60000 ffff 0000 
+			zl30 : 30 35 60000 ffff 0000 
+			zl31 : 30 35 60000 ffff 0000 
+			zl32 : 30 35 60000 ffff 0000 
+
+[JY-MAIN_U_EXCEED]				#JY母线电压越限参数（寄存器地址49200~49279）
+		<M1>
+			P : 90 100 60000 ffff 0000 
+			N : 90 100 60000 ffff 0000 
+		<M2>
+			P : 90 100 60000 ffff 0000 
+			N : 90 100 60000 ffff 0000 
+		<M3>
+			P : 90 100 60000 ffff 0000 
+			N : 90 100 60000 ffff 0000 
+		<M4>
+			P : 90 100 60000 ffff 0000 
+			N : 90 100 60000 ffff 0000 
+		<M5>
+			P : 90 100 60000 ffff 0000 
+			N : 90 100 60000 ffff 0000 
+		<M6>
+			P : 90 100 60000 ffff 0000 
+			N : 90 100 60000 ffff 0000 
+		<M7>
+			P : 90 100 60000 ffff 0000 
+			N : 90 100 60000 ffff 0000 
+[JX-RELAY]						#进线模块关联继电器（寄存器地址48680~48727）
+	M1 : ffff ffff ffff ffff ffff ffff ffff ffff 
+	M2 : ffff ffff ffff ffff ffff ffff ffff ffff 
+	M3 : ffff ffff ffff ffff ffff ffff ffff ffff 
+	M4 : ffff ffff ffff ffff ffff ffff ffff ffff 
+	M5 : ffff ffff ffff ffff ffff ffff ffff ffff 
+	M6 : ffff ffff ffff ffff ffff ffff ffff ffff 
+[YX-RELAY]						#遥信模块关联继电器（寄存器地址48730~48953）
+	M1 : ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+	M2 : ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+	M3 : ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+	M4 : ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+	M5 : ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+	M6 : ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+	M7 : ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff 
