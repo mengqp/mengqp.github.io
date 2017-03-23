@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<SCRIPT LANGUAGE="JavaScript">
+  function password() {
+  var testV = 1;
+  var pass1 = prompt('请输入密码:','');
+  while (testV < 3) {
+                 if (!pass1)
+                 history.go(-1);
+                 if (pass1 == "yfzx123") {
+                 <!-- alert('密码正确!'); -->
+                 window.location.href="readme.html";
+                 break;
+                 }
+                 testV+=1;
+                 var pass1 =
+                 prompt('密码错误!请重新输入:');
+                 }
+                 if (pass1!="password" & testV ==3)
+                 history.go(-1);
+                 return " ";
+                 }
+                 document.write(password());
+                 </SCRIPT>
