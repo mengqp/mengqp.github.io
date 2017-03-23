@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-03-23 Thu 09:47 -->
+<!-- 2017-03-23 Thu 10:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title></title>
@@ -231,55 +231,55 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf67b065">1. <span class="done DONE">DONE</span> HMI背光熄灭后，再次触屏点亮屏幕时，多次触摸均无法点亮屏幕，有时触屏会引起系统复位重启</a></li>
-<li><a href="#org22d3eac">2. <span class="done DONE">DONE</span> 屏幕界面闪烁</a></li>
-<li><a href="#org3779bd7">3. <span class="todo STARTED">STARTED</span> 后台通讯图标在通讯正常时应稳定显示在屏幕下方状态条内，实际效果是图标间断性的消失，监测后台通讯并没有丢帧</a></li>
-<li><a href="#orgd5e9a95">4. <span class="done DONE">DONE</span> 进线/馈线电量查询界面：无功电量的单位应为kvarh，实际为kWh</a></li>
-<li><a href="#org72912f6">5. <span class="todo TODO">TODO</span> 装置运行灯正常应秒级闪烁；实际出现间断性的熄灭，但装置运行正常</a></li>
-<li><a href="#org61fe75f">6. <span class="todo TODO">TODO</span> HMI界面“参数设置”——“系统参数设置”界面，只能添加模块，不能使能遥信，使能遥信的功能只能通过配置软件完成</a></li>
-<li><a href="#org6588aeb">7. <span class="todo TODO">TODO</span> 只使能进线低压告警(176V/198V/1S/关联RL1&amp;RL2)：在告警复位时，应产生A、B、C相低压告警，实际：进线数据查询界面“低压告警”、“缺相”均显示告警红灯，SOE记录只有A相低压、缺相SOE</a></li>
-<li><a href="#orgd9325bd">8. <span class="todo TODO">TODO</span> 在进线存在告警时：重启HMI系统，装置重新判断告警状态并出现弹窗，但是不产生新的告警SOE</a></li>
-<li><a href="#orga9102a8">9. <span class="todo TODO">TODO</span> 在满足告警的条件下：禁止告警功能，此时界面告警图标仍处于告警状态、告警灯常亮，使装置断电重启或系统复位，上述现象不会消失</a></li>
-<li><a href="#org87642dc">10. <span class="done DONE">DONE</span> HMI系统对时的原理为：当HMI时间更改时，立刻对底层模块对时；HMI上电正常走时的情况下，每3分钟对底层模块对时一次；实际效果：当HMI系统时间更改后，10mins～20mins后仍然没有对底层模块对时</a></li>
-<li><a href="#org60dbb6f">11. <span class="todo TODO">TODO</span> 当HMI的系统时间发生年份变化或月份跳跃变化时，进线和馈线的统计电量仍然按“本月”、“上月”、“上上月”依次位移</a></li>
-<li><a href="#org4f049b8">12. <span class="todo TODO">TODO</span> 上位机RS485通讯口与RS232通讯口互相影响：历史记录数据从一个通讯口读出后，然后再从另一个通讯口就无法读出；原则上应该互相独立，读出的数据互不影响</a></li>
-<li><a href="#orgb5c8159">13. <span class="done DONE">DONE</span> 查询HMI历史记录界面：YX32-A产生的SOE时标，毫秒有超过1000的情况</a></li>
-<li><a href="#orge3dd682">14. <span class="done DONE">DONE</span> 3352 SNMP网口数据无法读取</a></li>
-<li><a href="#orgf0f9411">15. <span class="done DONE">DONE</span> 馈线遥信32路关联继电器1后，发生相应的变位时，能正常产生SOE，但是没有消音弹窗；之前能正常的弹窗的进线低压报警也不能弹窗，系统重启后恢复正常</a></li>
-<li><a href="#org5f698e0">16. <span class="done DONE">DONE</span> HMI与底层模块波特率设置为9600bps，通过RS232/RS485通讯后台设置参数时，底层模块与HMI发生通讯中断，经过足够时间的轮询后可恢复正常</a></li>
-<li><a href="#org044b3a1">17. <span class="done DONE">DONE</span> JX-A的遥信变位状态0→1关联RL1后，当相应的遥信处于合状态时，关闭弹窗后仍会继续出现弹窗，但不产生新的SOE，有告警保护关联RL1时(如：低压告警)，不存在以上现象；                               YC32-A的遥信变位也存在此类问题</a></li>
-<li><a href="#orgbd778b2">18. <span class="done DONE">DONE</span> 通过后台通讯口RS485/RS232不能读写地址为40050～40079的装置类型、接口号、站号；但MODBUS通讯规约上有定义</a></li>
-<li><a href="#org08bc7ae">19. <span class="done DONE">DONE</span> 在接表通讯时，测试软件对epduhmi对时时引发通讯断。</a></li>
-<li><a href="#orgc7697cf">20. <span class="done DONE">DONE</span> 在上位机修改序列号后，立即断电重启，会发生修改序列号失败的现像</a></li>
-<li><a href="#org797032f">21. <span class="todo TODO">TODO</span> 出现程序升级失败的问题，在蓝汛现场，有hmi升级程序失败，后有网线升级的</a></li>
-<li><a href="#org07d3f89">22. <span class="todo TODO">TODO</span> 执行软件复位后，出现不能重启的情况，连接telnet 后reboot可以</a></li>
-<li><a href="#orgcae3694">23. <span class="done DONE">DONE</span> 在查看各个显示界面，退回到主界面时，右下角会出现一道白条。</a></li>
-<li><a href="#org6bee7ac">24. <span class="done DONE">DONE</span> 系统图中的数据以及SOE界面的页码，有时显示不出来。重新进入界面，才会显示出来。</a></li>
-<li><a href="#org1bfc217">25. <span class="done DONE">DONE</span> ePDU-HMI连接ePDU-YC32-A和ePDU-JX-A模块时，波特率设置为1200、2400时不通讯。    连接ePDU-YX32时，波特率1200时，查看运行状态显示界面，该模块一会显示红色（表示不通讯），一会显示绿色（表示通讯），该模块旁边的实际没有连接的模块显示绿色；波特率2400时，ePDU-YX32通讯正常，该模块旁边的实际没有连接的模块偶尔显示绿色。</a></li>
-<li><a href="#org44d2470">26. <span class="done DONE">DONE</span> 测试ePDU-JX-A模块的遥信关联继电器功能时，DI2-DI8设置关联任意继电器，双向关联时，遥信处于合状态，关闭弹窗之后，还会出现弹窗（关联RL1），通过告警复归之后，继电器断开，立马又闭合。没有新的SOE产生。</a></li>
-<li><a href="#orgebd7a2e">27. <span class="todo TODO">TODO</span> 直流导入配置时参数文件目前放在ac-param中，按照设计，应该放在dc-param中</a></li>
-<li><a href="#orgcdf3635">28. <span class="done BUGFIXD">BUGFIXD</span> #1 修改系统图中显示的单位</a></li>
-<li><a href="#org3445a28">29. <span class="done FEATUREFINISH">FEATUREFINISH</span> </a></li>
-<li><a href="#org7b60527">30. <span class="done ISSUECLOSE">ISSUECLOSE</span> #1 feature 初步将at91的直流hmi移到3352平台</a></li>
-<li><a href="#orga796a78">31. <span class="done ISSUECLOSE">ISSUECLOSE</span> #2 feature 3352直流，修改qt部分的图片加载为动态加载</a></li>
-<li><a href="#org423264d">32. <span class="done ISSUECLOSE">ISSUECLOSE</span> #3 feature 3352直流 在一个界面时发生闪烁问题</a></li>
-<li><a href="#orgaf73b93">33. <span class="done ISSUECLOSE">ISSUECLOSE</span> #4 bugs 将通讯状态标识的闪烁改为常亮, 与装置通讯改为通讯失败3次后通讯不正常</a></li>
-<li><a href="#org7f5cc1f">34. <span class="done ISSUECLOSE">ISSUECLOSE</span> #5 bugs 修改进线参数设置遥信关联坐标过小的问题</a></li>
-<li><a href="#org8d4f153">35. <span class="done ISSUECLOSE">ISSUECLOSE</span> #6 feature 在修改密码界面，修改密码为1位数，如：0时，可以修改成功，未提示错误，修改完成后输入密码0时提示密码错误，输入修改前的密码也提示错误。</a></li>
-<li><a href="#org2b41f08">36. <span class="done ISSUECLOSE">ISSUECLOSE</span> #7 bug 在点击进入soe查询时，边框出现系统图处有进入框显示</a></li>
-<li><a href="#org12619ff">37. <span class="todo TODO">TODO</span> 模块的硬遥信与越限等遥信处理方式是不一样的，只有在变化时才会产生新的soe，如JX的DI1 如果在模块在没有上电的情况下已经为合状态，那么装置在初始化上电后仍然是合状态，而不会产生由分到合的soe。并且协议中对模块进行告警复归时也不影响相应的硬遥信状态。这样就导致HMI在处理硬遥信时需要特殊处理</a></li>
-<li><a href="#orgf771637">38. <span class="todo TODO">TODO</span> 忘记密码后无其它办法进入参数设置界面，建议增加超级密码,交流需要做issue6的修改</a></li>
-<li><a href="#org44576b5">39. <span class="done ISSUECLOSE">ISSUECLOSE</span> #8 bug HMI与底层模块波特率设置为9600bps、8E1，底层模块与HMI发生通讯中断，经过足够时间的轮询后可恢复正常（现象为进线模块时通时断，同一条总线上的YX16模块通讯正常）波特率设为38400bps时，进线与遥信模块通讯均正常</a></li>
-<li><a href="#org69728ab">40. <span class="done ISSUECLOSE">ISSUECLOSE</span> #9 bug 将485-1和485-2的通讯线连接在一起，运行状态界面显示通讯为绿色，但实际485-2的模块未通讯。</a></li>
-<li><a href="#orgd00cc87">41. <span class="done ISSUECLOSE">ISSUECLOSE</span> #10 bug 进线数据查询界面，开关量状态处名称显示不全</a></li>
-<li><a href="#org2c7bb1a">42. <span class="done ISSUECLOSE">ISSUECLOSE</span> #11 bug 直流在进入历史界面时，向前翻页是可以点击的状态</a></li>
-<li><a href="#org1dd2172">43. <span class="done ISSUECLOSE">ISSUECLOSE</span> #12 bug 在系统参数界面向后翻页，然后向前翻页，第一页为查询状态</a></li>
-<li><a href="#org65c4db9">44. <span class="done ISSUECLOSE">ISSUECLOSE</span> 在进入历史数据界面时不显示页数</a></li>
+<li><a href="#org590a919">1. <span class="done DONE">DONE</span> HMI背光熄灭后，再次触屏点亮屏幕时，多次触摸均无法点亮屏幕，有时触屏会引起系统复位重启</a></li>
+<li><a href="#org5afb0f2">2. <span class="done DONE">DONE</span> 屏幕界面闪烁</a></li>
+<li><a href="#org5dc49e3">3. <span class="todo STARTED">STARTED</span> 后台通讯图标在通讯正常时应稳定显示在屏幕下方状态条内，实际效果是图标间断性的消失，监测后台通讯并没有丢帧</a></li>
+<li><a href="#org0d28159">4. <span class="done DONE">DONE</span> 进线/馈线电量查询界面：无功电量的单位应为kvarh，实际为kWh</a></li>
+<li><a href="#orgaafeefa">5. <span class="todo TODO">TODO</span> 装置运行灯正常应秒级闪烁；实际出现间断性的熄灭，但装置运行正常</a></li>
+<li><a href="#org110a879">6. <span class="todo TODO">TODO</span> HMI界面“参数设置”——“系统参数设置”界面，只能添加模块，不能使能遥信，使能遥信的功能只能通过配置软件完成</a></li>
+<li><a href="#orgecfcee0">7. <span class="todo TODO">TODO</span> 只使能进线低压告警(176V/198V/1S/关联RL1&amp;RL2)：在告警复位时，应产生A、B、C相低压告警，实际：进线数据查询界面“低压告警”、“缺相”均显示告警红灯，SOE记录只有A相低压、缺相SOE</a></li>
+<li><a href="#orgbc5e500">8. <span class="todo TODO">TODO</span> 在进线存在告警时：重启HMI系统，装置重新判断告警状态并出现弹窗，但是不产生新的告警SOE</a></li>
+<li><a href="#org976814e">9. <span class="todo TODO">TODO</span> 在满足告警的条件下：禁止告警功能，此时界面告警图标仍处于告警状态、告警灯常亮，使装置断电重启或系统复位，上述现象不会消失</a></li>
+<li><a href="#orga80b5fc">10. <span class="done DONE">DONE</span> HMI系统对时的原理为：当HMI时间更改时，立刻对底层模块对时；HMI上电正常走时的情况下，每3分钟对底层模块对时一次；实际效果：当HMI系统时间更改后，10mins～20mins后仍然没有对底层模块对时</a></li>
+<li><a href="#orgdc8427c">11. <span class="todo TODO">TODO</span> 当HMI的系统时间发生年份变化或月份跳跃变化时，进线和馈线的统计电量仍然按“本月”、“上月”、“上上月”依次位移</a></li>
+<li><a href="#org5c09745">12. <span class="todo TODO">TODO</span> 上位机RS485通讯口与RS232通讯口互相影响：历史记录数据从一个通讯口读出后，然后再从另一个通讯口就无法读出；原则上应该互相独立，读出的数据互不影响</a></li>
+<li><a href="#org55ebd9d">13. <span class="done DONE">DONE</span> 查询HMI历史记录界面：YX32-A产生的SOE时标，毫秒有超过1000的情况</a></li>
+<li><a href="#orgb7dbd91">14. <span class="done DONE">DONE</span> 3352 SNMP网口数据无法读取</a></li>
+<li><a href="#orgdab81bd">15. <span class="done DONE">DONE</span> 馈线遥信32路关联继电器1后，发生相应的变位时，能正常产生SOE，但是没有消音弹窗；之前能正常的弹窗的进线低压报警也不能弹窗，系统重启后恢复正常</a></li>
+<li><a href="#org3e4d4f6">16. <span class="done DONE">DONE</span> HMI与底层模块波特率设置为9600bps，通过RS232/RS485通讯后台设置参数时，底层模块与HMI发生通讯中断，经过足够时间的轮询后可恢复正常</a></li>
+<li><a href="#orgf75c77e">17. <span class="done DONE">DONE</span> JX-A的遥信变位状态0→1关联RL1后，当相应的遥信处于合状态时，关闭弹窗后仍会继续出现弹窗，但不产生新的SOE，有告警保护关联RL1时(如：低压告警)，不存在以上现象；                               YC32-A的遥信变位也存在此类问题</a></li>
+<li><a href="#org020cb96">18. <span class="done DONE">DONE</span> 通过后台通讯口RS485/RS232不能读写地址为40050～40079的装置类型、接口号、站号；但MODBUS通讯规约上有定义</a></li>
+<li><a href="#orgbcce04f">19. <span class="done DONE">DONE</span> 在接表通讯时，测试软件对epduhmi对时时引发通讯断。</a></li>
+<li><a href="#org08807de">20. <span class="done DONE">DONE</span> 在上位机修改序列号后，立即断电重启，会发生修改序列号失败的现像</a></li>
+<li><a href="#org1aa0159">21. <span class="todo TODO">TODO</span> 出现程序升级失败的问题，在蓝汛现场，有hmi升级程序失败，后有网线升级的</a></li>
+<li><a href="#orgc327eed">22. <span class="todo TODO">TODO</span> 执行软件复位后，出现不能重启的情况，连接telnet 后reboot可以</a></li>
+<li><a href="#org158797e">23. <span class="done DONE">DONE</span> 在查看各个显示界面，退回到主界面时，右下角会出现一道白条。</a></li>
+<li><a href="#org0effc59">24. <span class="done DONE">DONE</span> 系统图中的数据以及SOE界面的页码，有时显示不出来。重新进入界面，才会显示出来。</a></li>
+<li><a href="#org974a1d8">25. <span class="done DONE">DONE</span> ePDU-HMI连接ePDU-YC32-A和ePDU-JX-A模块时，波特率设置为1200、2400时不通讯。    连接ePDU-YX32时，波特率1200时，查看运行状态显示界面，该模块一会显示红色（表示不通讯），一会显示绿色（表示通讯），该模块旁边的实际没有连接的模块显示绿色；波特率2400时，ePDU-YX32通讯正常，该模块旁边的实际没有连接的模块偶尔显示绿色。</a></li>
+<li><a href="#org35845ab">26. <span class="done DONE">DONE</span> 测试ePDU-JX-A模块的遥信关联继电器功能时，DI2-DI8设置关联任意继电器，双向关联时，遥信处于合状态，关闭弹窗之后，还会出现弹窗（关联RL1），通过告警复归之后，继电器断开，立马又闭合。没有新的SOE产生。</a></li>
+<li><a href="#org27f3720">27. <span class="todo TODO">TODO</span> 直流导入配置时参数文件目前放在ac-param中，按照设计，应该放在dc-param中</a></li>
+<li><a href="#orgad126fb">28. <span class="done BUGFIXD">BUGFIXD</span> #1 修改系统图中显示的单位</a></li>
+<li><a href="#org984c2ea">29. <span class="done FEATUREFINISH">FEATUREFINISH</span> </a></li>
+<li><a href="#org023cccf">30. <span class="done ISSUECLOSE">ISSUECLOSE</span> #1 feature 初步将at91的直流hmi移到3352平台</a></li>
+<li><a href="#org2856d07">31. <span class="done ISSUECLOSE">ISSUECLOSE</span> #2 feature 3352直流，修改qt部分的图片加载为动态加载</a></li>
+<li><a href="#org4146dce">32. <span class="done ISSUECLOSE">ISSUECLOSE</span> #3 feature 3352直流 在一个界面时发生闪烁问题</a></li>
+<li><a href="#org4cc4d8b">33. <span class="done ISSUECLOSE">ISSUECLOSE</span> #4 bugs 将通讯状态标识的闪烁改为常亮, 与装置通讯改为通讯失败3次后通讯不正常</a></li>
+<li><a href="#org759fc3c">34. <span class="done ISSUECLOSE">ISSUECLOSE</span> #5 bugs 修改进线参数设置遥信关联坐标过小的问题</a></li>
+<li><a href="#orgcee348e">35. <span class="done ISSUECLOSE">ISSUECLOSE</span> #6 feature 在修改密码界面，修改密码为1位数，如：0时，可以修改成功，未提示错误，修改完成后输入密码0时提示密码错误，输入修改前的密码也提示错误。</a></li>
+<li><a href="#orga7b6237">36. <span class="done ISSUECLOSE">ISSUECLOSE</span> #7 bug 在点击进入soe查询时，边框出现系统图处有进入框显示</a></li>
+<li><a href="#org0794c3d">37. <span class="todo TODO">TODO</span> 模块的硬遥信与越限等遥信处理方式是不一样的，只有在变化时才会产生新的soe，如JX的DI1 如果在模块在没有上电的情况下已经为合状态，那么装置在初始化上电后仍然是合状态，而不会产生由分到合的soe。并且协议中对模块进行告警复归时也不影响相应的硬遥信状态。这样就导致HMI在处理硬遥信时需要特殊处理</a></li>
+<li><a href="#orgbb9966d">38. <span class="todo TODO">TODO</span> 忘记密码后无其它办法进入参数设置界面，建议增加超级密码,交流需要做issue6的修改</a></li>
+<li><a href="#org1184731">39. <span class="done ISSUECLOSE">ISSUECLOSE</span> #8 bug HMI与底层模块波特率设置为9600bps、8E1，底层模块与HMI发生通讯中断，经过足够时间的轮询后可恢复正常（现象为进线模块时通时断，同一条总线上的YX16模块通讯正常）波特率设为38400bps时，进线与遥信模块通讯均正常</a></li>
+<li><a href="#org9fccd71">40. <span class="done ISSUECLOSE">ISSUECLOSE</span> #9 bug 将485-1和485-2的通讯线连接在一起，运行状态界面显示通讯为绿色，但实际485-2的模块未通讯。</a></li>
+<li><a href="#org1392f63">41. <span class="done ISSUECLOSE">ISSUECLOSE</span> #10 bug 进线数据查询界面，开关量状态处名称显示不全</a></li>
+<li><a href="#orgfb00334">42. <span class="done ISSUECLOSE">ISSUECLOSE</span> #11 bug 直流在进入历史界面时，向前翻页是可以点击的状态</a></li>
+<li><a href="#org7bdc0d2">43. <span class="done ISSUECLOSE">ISSUECLOSE</span> #12 bug 在系统参数界面向后翻页，然后向前翻页，第一页为查询状态</a></li>
+<li><a href="#org3dd6966">44. <span class="done ISSUECLOSE">ISSUECLOSE</span> #13 bug 在进入历史数据界面时不显示页数</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf67b065" class="outline-2">
-<h2 id="orgf67b065"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> HMI背光熄灭后，再次触屏点亮屏幕时，多次触摸均无法点亮屏幕，有时触屏会引起系统复位重启</h2>
+<div id="outline-container-org590a919" class="outline-2">
+<h2 id="org590a919"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> HMI背光熄灭后，再次触屏点亮屏幕时，多次触摸均无法点亮屏幕，有时触屏会引起系统复位重启</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 原因：QT中所有图片静态加载，占用CPU空间较大造成
@@ -288,8 +288,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org22d3eac" class="outline-2">
-<h2 id="org22d3eac"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> 屏幕界面闪烁</h2>
+<div id="outline-container-org5afb0f2" class="outline-2">
+<h2 id="org5afb0f2"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> 屏幕界面闪烁</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 原因：闪烁的原因是两个界面同时刷新的问题，除了主页图是面积800x480的图外，其它的图都是800x450的图，这样就会现，（0,450）到（800，480）这个区域内刷新是由主界面控制，其它区域的图元是由系统图控制，这样就导致了两个界面同时刷新的现象，
@@ -300,8 +300,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org3779bd7" class="outline-2">
-<h2 id="org3779bd7"><span class="section-number-2">3</span> <span class="todo STARTED">STARTED</span> 后台通讯图标在通讯正常时应稳定显示在屏幕下方状态条内，实际效果是图标间断性的消失，监测后台通讯并没有丢帧</h2>
+<div id="outline-container-org5dc49e3" class="outline-2">
+<h2 id="org5dc49e3"><span class="section-number-2">3</span> <span class="todo STARTED">STARTED</span> 后台通讯图标在通讯正常时应稳定显示在屏幕下方状态条内，实际效果是图标间断性的消失，监测后台通讯并没有丢帧</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 原因：在modbud规药收到报文后会将state文件中的第二位置1，在download的两个线程中，一个线程每隔一分钟和一秒钟将程序置0一次，而在qt程序中，会每隔1s钟读一次状态，这样就导致了到读到1的时候就是闪烁的，当读到0的时候就是不闪烁的。但是由于通讯间隔的原因，置1的时候不定，所以闪烁的时间频率可能也就不定了。
@@ -309,8 +309,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd5e9a95" class="outline-2">
-<h2 id="orgd5e9a95"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> 进线/馈线电量查询界面：无功电量的单位应为kvarh，实际为kWh</h2>
+<div id="outline-container-org0d28159" class="outline-2">
+<h2 id="org0d28159"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> 进线/馈线电量查询界面：无功电量的单位应为kvarh，实际为kWh</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 更换图片
@@ -318,28 +318,28 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org72912f6" class="outline-2">
-<h2 id="org72912f6"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> 装置运行灯正常应秒级闪烁；实际出现间断性的熄灭，但装置运行正常</h2>
+<div id="outline-container-orgaafeefa" class="outline-2">
+<h2 id="orgaafeefa"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> 装置运行灯正常应秒级闪烁；实际出现间断性的熄灭，但装置运行正常</h2>
 </div>
 
-<div id="outline-container-org61fe75f" class="outline-2">
-<h2 id="org61fe75f"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> HMI界面“参数设置”——“系统参数设置”界面，只能添加模块，不能使能遥信，使能遥信的功能只能通过配置软件完成</h2>
+<div id="outline-container-org110a879" class="outline-2">
+<h2 id="org110a879"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> HMI界面“参数设置”——“系统参数设置”界面，只能添加模块，不能使能遥信，使能遥信的功能只能通过配置软件完成</h2>
 </div>
 
-<div id="outline-container-org6588aeb" class="outline-2">
-<h2 id="org6588aeb"><span class="section-number-2">7</span> <span class="todo TODO">TODO</span> 只使能进线低压告警(176V/198V/1S/关联RL1&amp;RL2)：在告警复位时，应产生A、B、C相低压告警，实际：进线数据查询界面“低压告警”、“缺相”均显示告警红灯，SOE记录只有A相低压、缺相SOE</h2>
+<div id="outline-container-orgecfcee0" class="outline-2">
+<h2 id="orgecfcee0"><span class="section-number-2">7</span> <span class="todo TODO">TODO</span> 只使能进线低压告警(176V/198V/1S/关联RL1&amp;RL2)：在告警复位时，应产生A、B、C相低压告警，实际：进线数据查询界面“低压告警”、“缺相”均显示告警红灯，SOE记录只有A相低压、缺相SOE</h2>
 </div>
 
-<div id="outline-container-orgd9325bd" class="outline-2">
-<h2 id="orgd9325bd"><span class="section-number-2">8</span> <span class="todo TODO">TODO</span> 在进线存在告警时：重启HMI系统，装置重新判断告警状态并出现弹窗，但是不产生新的告警SOE</h2>
+<div id="outline-container-orgbc5e500" class="outline-2">
+<h2 id="orgbc5e500"><span class="section-number-2">8</span> <span class="todo TODO">TODO</span> 在进线存在告警时：重启HMI系统，装置重新判断告警状态并出现弹窗，但是不产生新的告警SOE</h2>
 </div>
 
-<div id="outline-container-orga9102a8" class="outline-2">
-<h2 id="orga9102a8"><span class="section-number-2">9</span> <span class="todo TODO">TODO</span> 在满足告警的条件下：禁止告警功能，此时界面告警图标仍处于告警状态、告警灯常亮，使装置断电重启或系统复位，上述现象不会消失</h2>
+<div id="outline-container-org976814e" class="outline-2">
+<h2 id="org976814e"><span class="section-number-2">9</span> <span class="todo TODO">TODO</span> 在满足告警的条件下：禁止告警功能，此时界面告警图标仍处于告警状态、告警灯常亮，使装置断电重启或系统复位，上述现象不会消失</h2>
 </div>
 
-<div id="outline-container-org87642dc" class="outline-2">
-<h2 id="org87642dc"><span class="section-number-2">10</span> <span class="done DONE">DONE</span> HMI系统对时的原理为：当HMI时间更改时，立刻对底层模块对时；HMI上电正常走时的情况下，每3分钟对底层模块对时一次；实际效果：当HMI系统时间更改后，10mins～20mins后仍然没有对底层模块对时</h2>
+<div id="outline-container-orga80b5fc" class="outline-2">
+<h2 id="orga80b5fc"><span class="section-number-2">10</span> <span class="done DONE">DONE</span> HMI系统对时的原理为：当HMI时间更改时，立刻对底层模块对时；HMI上电正常走时的情况下，每3分钟对底层模块对时一次；实际效果：当HMI系统时间更改后，10mins～20mins后仍然没有对底层模块对时</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 原因：在修改完系统时间后，hmi并没有对模块进行对时，要等每小时对时间隔的时间才会对模块进行对时,正常的对时间隔为每小时对时一次
@@ -348,15 +348,15 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org60dbb6f" class="outline-2">
-<h2 id="org60dbb6f"><span class="section-number-2">11</span> <span class="todo TODO">TODO</span> 当HMI的系统时间发生年份变化或月份跳跃变化时，进线和馈线的统计电量仍然按“本月”、“上月”、“上上月”依次位移</h2>
+<div id="outline-container-orgdc8427c" class="outline-2">
+<h2 id="orgdc8427c"><span class="section-number-2">11</span> <span class="todo TODO">TODO</span> 当HMI的系统时间发生年份变化或月份跳跃变化时，进线和馈线的统计电量仍然按“本月”、“上月”、“上上月”依次位移</h2>
 </div>
 
-<div id="outline-container-org4f049b8" class="outline-2">
-<h2 id="org4f049b8"><span class="section-number-2">12</span> <span class="todo TODO">TODO</span> 上位机RS485通讯口与RS232通讯口互相影响：历史记录数据从一个通讯口读出后，然后再从另一个通讯口就无法读出；原则上应该互相独立，读出的数据互不影响</h2>
+<div id="outline-container-org5c09745" class="outline-2">
+<h2 id="org5c09745"><span class="section-number-2">12</span> <span class="todo TODO">TODO</span> 上位机RS485通讯口与RS232通讯口互相影响：历史记录数据从一个通讯口读出后，然后再从另一个通讯口就无法读出；原则上应该互相独立，读出的数据互不影响</h2>
 </div>
-<div id="outline-container-orgb5c8159" class="outline-2">
-<h2 id="orgb5c8159"><span class="section-number-2">13</span> <span class="done DONE">DONE</span> 查询HMI历史记录界面：YX32-A产生的SOE时标，毫秒有超过1000的情况</h2>
+<div id="outline-container-org55ebd9d" class="outline-2">
+<h2 id="org55ebd9d"><span class="section-number-2">13</span> <span class="done DONE">DONE</span> 查询HMI历史记录界面：YX32-A产生的SOE时标，毫秒有超过1000的情况</h2>
 <div class="outline-text-2" id="text-13">
 <p>
 原因：经过查询，是YX模块的问题，上传的数据发生错误
@@ -365,16 +365,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orge3dd682" class="outline-2">
-<h2 id="orge3dd682"><span class="section-number-2">14</span> <span class="done DONE">DONE</span> 3352 SNMP网口数据无法读取</h2>
+<div id="outline-container-orgb7dbd91" class="outline-2">
+<h2 id="orgb7dbd91"><span class="section-number-2">14</span> <span class="done DONE">DONE</span> 3352 SNMP网口数据无法读取</h2>
 <div class="outline-text-2" id="text-14">
 <p>
 没有在3352板子上放入mib库和配置文件
 </p>
 </div>
 </div>
-<div id="outline-container-orgf0f9411" class="outline-2">
-<h2 id="orgf0f9411"><span class="section-number-2">15</span> <span class="done DONE">DONE</span> 馈线遥信32路关联继电器1后，发生相应的变位时，能正常产生SOE，但是没有消音弹窗；之前能正常的弹窗的进线低压报警也不能弹窗，系统重启后恢复正常</h2>
+<div id="outline-container-orgdab81bd" class="outline-2">
+<h2 id="orgdab81bd"><span class="section-number-2">15</span> <span class="done DONE">DONE</span> 馈线遥信32路关联继电器1后，发生相应的变位时，能正常产生SOE，但是没有消音弹窗；之前能正常的弹窗的进线低压报警也不能弹窗，系统重启后恢复正常</h2>
 <div class="outline-text-2" id="text-15">
 <p>
 原因：可能是因为通讯基制的修改导致的，修改完通讯基制后没有引起过问题
@@ -383,8 +383,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org5f698e0" class="outline-2">
-<h2 id="org5f698e0"><span class="section-number-2">16</span> <span class="done DONE">DONE</span> HMI与底层模块波特率设置为9600bps，通过RS232/RS485通讯后台设置参数时，底层模块与HMI发生通讯中断，经过足够时间的轮询后可恢复正常</h2>
+<div id="outline-container-org3e4d4f6" class="outline-2">
+<h2 id="org3e4d4f6"><span class="section-number-2">16</span> <span class="done DONE">DONE</span> HMI与底层模块波特率设置为9600bps，通过RS232/RS485通讯后台设置参数时，底层模块与HMI发生通讯中断，经过足够时间的轮询后可恢复正常</h2>
 <div class="outline-text-2" id="text-16">
 <p>
 原因：
@@ -510,8 +510,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org044b3a1" class="outline-2">
-<h2 id="org044b3a1"><span class="section-number-2">17</span> <span class="done DONE">DONE</span> JX-A的遥信变位状态0→1关联RL1后，当相应的遥信处于合状态时，关闭弹窗后仍会继续出现弹窗，但不产生新的SOE，有告警保护关联RL1时(如：低压告警)，不存在以上现象；                               YC32-A的遥信变位也存在此类问题</h2>
+<div id="outline-container-orgf75c77e" class="outline-2">
+<h2 id="orgf75c77e"><span class="section-number-2">17</span> <span class="done DONE">DONE</span> JX-A的遥信变位状态0→1关联RL1后，当相应的遥信处于合状态时，关闭弹窗后仍会继续出现弹窗，但不产生新的SOE，有告警保护关联RL1时(如：低压告警)，不存在以上现象；                               YC32-A的遥信变位也存在此类问题</h2>
 <div class="outline-text-2" id="text-17">
 <p>
 原因：
@@ -528,24 +528,24 @@ for the JavaScript code in this tag.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbd778b2" class="outline-2">
-<h2 id="orgbd778b2"><span class="section-number-2">18</span> <span class="done DONE">DONE</span> 通过后台通讯口RS485/RS232不能读写地址为40050～40079的装置类型、接口号、站号；但MODBUS通讯规约上有定义</h2>
+<div id="outline-container-org020cb96" class="outline-2">
+<h2 id="org020cb96"><span class="section-number-2">18</span> <span class="done DONE">DONE</span> 通过后台通讯口RS485/RS232不能读写地址为40050～40079的装置类型、接口号、站号；但MODBUS通讯规约上有定义</h2>
 <div class="outline-text-2" id="text-18">
 <p>
 新协议就是这么写的，不知道是什么原因
 </p>
 </div>
 </div>
-<div id="outline-container-org08bc7ae" class="outline-2">
-<h2 id="org08bc7ae"><span class="section-number-2">19</span> <span class="done DONE">DONE</span> 在接表通讯时，测试软件对epduhmi对时时引发通讯断。</h2>
+<div id="outline-container-orgbcce04f" class="outline-2">
+<h2 id="orgbcce04f"><span class="section-number-2">19</span> <span class="done DONE">DONE</span> 在接表通讯时，测试软件对epduhmi对时时引发通讯断。</h2>
 <div class="outline-text-2" id="text-19">
 <p>
 上位机问题
 </p>
 </div>
 </div>
-<div id="outline-container-orgc7697cf" class="outline-2">
-<h2 id="orgc7697cf"><span class="section-number-2">20</span> <span class="done DONE">DONE</span> 在上位机修改序列号后，立即断电重启，会发生修改序列号失败的现像</h2>
+<div id="outline-container-org08807de" class="outline-2">
+<h2 id="org08807de"><span class="section-number-2">20</span> <span class="done DONE">DONE</span> 在上位机修改序列号后，立即断电重启，会发生修改序列号失败的现像</h2>
 <div class="outline-text-2" id="text-20">
 <p>
 原因分析：
@@ -563,11 +563,11 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org797032f" class="outline-2">
-<h2 id="org797032f"><span class="section-number-2">21</span> <span class="todo TODO">TODO</span> 出现程序升级失败的问题，在蓝汛现场，有hmi升级程序失败，后有网线升级的</h2>
+<div id="outline-container-org1aa0159" class="outline-2">
+<h2 id="org1aa0159"><span class="section-number-2">21</span> <span class="todo TODO">TODO</span> 出现程序升级失败的问题，在蓝汛现场，有hmi升级程序失败，后有网线升级的</h2>
 </div>
-<div id="outline-container-org07d3f89" class="outline-2">
-<h2 id="org07d3f89"><span class="section-number-2">22</span> <span class="todo TODO">TODO</span> 执行软件复位后，出现不能重启的情况，连接telnet 后reboot可以</h2>
+<div id="outline-container-orgc327eed" class="outline-2">
+<h2 id="orgc327eed"><span class="section-number-2">22</span> <span class="todo TODO">TODO</span> 执行软件复位后，出现不能重启的情况，连接telnet 后reboot可以</h2>
 <div class="outline-text-2" id="text-22">
 <hr />
 <p>
@@ -575,8 +575,8 @@ for the JavaScript code in this tag.
 </p>
 </div>
 </div>
-<div id="outline-container-orgcae3694" class="outline-2">
-<h2 id="orgcae3694"><span class="section-number-2">23</span> <span class="done DONE">DONE</span> 在查看各个显示界面，退回到主界面时，右下角会出现一道白条。</h2>
+<div id="outline-container-org158797e" class="outline-2">
+<h2 id="org158797e"><span class="section-number-2">23</span> <span class="done DONE">DONE</span> 在查看各个显示界面，退回到主界面时，右下角会出现一道白条。</h2>
 <div class="outline-text-2" id="text-23">
 <p>
 原因：在张伟全原来的设计中，右下角是一个点击出现日历的按钮，该按钮比时间显示在纵深上要大上一点，而实际程序上并没有用到该按钮，但是也没有删除，而在我最近修改的3352程序中，在进入其它界面时，主界面的除状态栏的部分外，其它部分不再刷新，这样就导致可能这个按钮也不再刷新。出现了这个问题
@@ -584,8 +584,8 @@ for the JavaScript code in this tag.
 </p>
 </div>
 </div>
-<div id="outline-container-org6bee7ac" class="outline-2">
-<h2 id="org6bee7ac"><span class="section-number-2">24</span> <span class="done DONE">DONE</span> 系统图中的数据以及SOE界面的页码，有时显示不出来。重新进入界面，才会显示出来。</h2>
+<div id="outline-container-org0effc59" class="outline-2">
+<h2 id="org0effc59"><span class="section-number-2">24</span> <span class="done DONE">DONE</span> 系统图中的数据以及SOE界面的页码，有时显示不出来。重新进入界面，才会显示出来。</h2>
 <div class="outline-text-2" id="text-24">
 <p>
 原因：在图形界面中，按钮和进入界面是信号和槽的关系，而进入界面执行的是exec()函数。显示不出来的时候就是exec()执行出现错误的时候，这个错误就是因为点击按钮时多次触发了exec()。
@@ -593,8 +593,8 @@ for the JavaScript code in this tag.
 </p>
 </div>
 </div>
-<div id="outline-container-org1bfc217" class="outline-2">
-<h2 id="org1bfc217"><span class="section-number-2">25</span> <span class="done DONE">DONE</span> ePDU-HMI连接ePDU-YC32-A和ePDU-JX-A模块时，波特率设置为1200、2400时不通讯。    连接ePDU-YX32时，波特率1200时，查看运行状态显示界面，该模块一会显示红色（表示不通讯），一会显示绿色（表示通讯），该模块旁边的实际没有连接的模块显示绿色；波特率2400时，ePDU-YX32通讯正常，该模块旁边的实际没有连接的模块偶尔显示绿色。</h2>
+<div id="outline-container-org974a1d8" class="outline-2">
+<h2 id="org974a1d8"><span class="section-number-2">25</span> <span class="done DONE">DONE</span> ePDU-HMI连接ePDU-YC32-A和ePDU-JX-A模块时，波特率设置为1200、2400时不通讯。    连接ePDU-YX32时，波特率1200时，查看运行状态显示界面，该模块一会显示红色（表示不通讯），一会显示绿色（表示通讯），该模块旁边的实际没有连接的模块显示绿色；波特率2400时，ePDU-YX32通讯正常，该模块旁边的实际没有连接的模块偶尔显示绿色。</h2>
 <div class="outline-text-2" id="text-25">
 <p>
 原因：串口驱动默认16个字节产生一次中断，我所做的认为帧结束是按一个字节做的，所以在低波特率时，由于时间较长，在数据还没有处理完数据时就已经超时，导致通讯中断。
@@ -602,8 +602,8 @@ for the JavaScript code in this tag.
 </p>
 </div>
 </div>
-<div id="outline-container-org44d2470" class="outline-2">
-<h2 id="org44d2470"><span class="section-number-2">26</span> <span class="done DONE">DONE</span> 测试ePDU-JX-A模块的遥信关联继电器功能时，DI2-DI8设置关联任意继电器，双向关联时，遥信处于合状态，关闭弹窗之后，还会出现弹窗（关联RL1），通过告警复归之后，继电器断开，立马又闭合。没有新的SOE产生。</h2>
+<div id="outline-container-org35845ab" class="outline-2">
+<h2 id="org35845ab"><span class="section-number-2">26</span> <span class="done DONE">DONE</span> 测试ePDU-JX-A模块的遥信关联继电器功能时，DI2-DI8设置关联任意继电器，双向关联时，遥信处于合状态，关闭弹窗之后，还会出现弹窗（关联RL1），通过告警复归之后，继电器断开，立马又闭合。没有新的SOE产生。</h2>
 <div class="outline-text-2" id="text-26">
 <p>
 原因：最新的遥信值与上一次的遥信值在移位比较时发生错误
@@ -615,8 +615,8 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-orgebd7a2e" class="outline-2">
-<h2 id="orgebd7a2e"><span class="section-number-2">27</span> <span class="todo TODO">TODO</span> 直流导入配置时参数文件目前放在ac-param中，按照设计，应该放在dc-param中</h2>
+<div id="outline-container-org27f3720" class="outline-2">
+<h2 id="org27f3720"><span class="section-number-2">27</span> <span class="todo TODO">TODO</span> 直流导入配置时参数文件目前放在ac-param中，按照设计，应该放在dc-param中</h2>
 <div class="outline-text-2" id="text-27">
 <ul class="org-ul">
 <li><p>
@@ -630,8 +630,8 @@ State "BUG"        from "TODO"       <span class="timestamp-wrapper"><span class
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcdf3635" class="outline-2">
-<h2 id="orgcdf3635"><span class="section-number-2">28</span> <span class="done BUGFIXD">BUGFIXD</span> #1 修改系统图中显示的单位</h2>
+<div id="outline-container-orgad126fb" class="outline-2">
+<h2 id="orgad126fb"><span class="section-number-2">28</span> <span class="done BUGFIXD">BUGFIXD</span> #1 修改系统图中显示的单位</h2>
 <div class="outline-text-2" id="text-28">
 <ul class="org-ul">
 <li>State "BUGFIXD"    from "BUG"        <span class="timestamp-wrapper"><span class="timestamp">[2017-02-08 Wed 14:53] </span></span> <br />
@@ -641,8 +641,8 @@ State "BUG"        from "TODO"       <span class="timestamp-wrapper"><span class
 </ul>
 </div>
 </div>
-<div id="outline-container-org3445a28" class="outline-2">
-<h2 id="org3445a28"><span class="section-number-2">29</span> <span class="done FEATUREFINISH">FEATUREFINISH</span> </h2>
+<div id="outline-container-org984c2ea" class="outline-2">
+<h2 id="org984c2ea"><span class="section-number-2">29</span> <span class="done FEATUREFINISH">FEATUREFINISH</span> </h2>
 <div class="outline-text-2" id="text-29">
 <ul class="org-ul">
 <li>State "FEATUREFINISH" from "FEATURE"    <span class="timestamp-wrapper"><span class="timestamp">[2017-02-08 Wed 15:53] </span></span> <br />
@@ -650,8 +650,8 @@ State "BUG"        from "TODO"       <span class="timestamp-wrapper"><span class
 </ul>
 </div>
 </div>
-<div id="outline-container-org7b60527" class="outline-2">
-<h2 id="org7b60527"><span class="section-number-2">30</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #1 feature 初步将at91的直流hmi移到3352平台</h2>
+<div id="outline-container-org023cccf" class="outline-2">
+<h2 id="org023cccf"><span class="section-number-2">30</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #1 feature 初步将at91的直流hmi移到3352平台</h2>
 <div class="outline-text-2" id="text-30">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-03 Fri 11:42] </span></span> <br />
@@ -663,8 +663,8 @@ d942885 * i1 修改硬件接口，适应3352平台</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga796a78" class="outline-2">
-<h2 id="orga796a78"><span class="section-number-2">31</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #2 feature 3352直流，修改qt部分的图片加载为动态加载</h2>
+<div id="outline-container-org2856d07" class="outline-2">
+<h2 id="org2856d07"><span class="section-number-2">31</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #2 feature 3352直流，修改qt部分的图片加载为动态加载</h2>
 <div class="outline-text-2" id="text-31">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-06 Mon 16:28] </span></span> <br />
@@ -688,8 +688,8 @@ b6f21a2 * origin/develop i2 再次修改soedlg 以满足动态加载
 </ul>
 </div>
 </div>
-<div id="outline-container-org423264d" class="outline-2">
-<h2 id="org423264d"><span class="section-number-2">32</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #3 feature 3352直流 在一个界面时发生闪烁问题</h2>
+<div id="outline-container-org4146dce" class="outline-2">
+<h2 id="org4146dce"><span class="section-number-2">32</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #3 feature 3352直流 在一个界面时发生闪烁问题</h2>
 <div class="outline-text-2" id="text-32">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-09 Thu 17:38] </span></span> <br />
@@ -701,8 +701,8 @@ b780094 * i3 加入stdbool.h头文件，以使bool合理
 </ul>
 </div>
 </div>
-<div id="outline-container-orgaf73b93" class="outline-2">
-<h2 id="orgaf73b93"><span class="section-number-2">33</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #4 bugs 将通讯状态标识的闪烁改为常亮, 与装置通讯改为通讯失败3次后通讯不正常</h2>
+<div id="outline-container-org4cc4d8b" class="outline-2">
+<h2 id="org4cc4d8b"><span class="section-number-2">33</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #4 bugs 将通讯状态标识的闪烁改为常亮, 与装置通讯改为通讯失败3次后通讯不正常</h2>
 <div class="outline-text-2" id="text-33">
 <ul class="org-ul">
 <li><p>
@@ -725,8 +725,8 @@ cb9354f * i4 i4问题readme提交
 </ul>
 </div>
 </div>
-<div id="outline-container-org7f5cc1f" class="outline-2">
-<h2 id="org7f5cc1f"><span class="section-number-2">34</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #5 bugs 修改进线参数设置遥信关联坐标过小的问题</h2>
+<div id="outline-container-org759fc3c" class="outline-2">
+<h2 id="org759fc3c"><span class="section-number-2">34</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #5 bugs 修改进线参数设置遥信关联坐标过小的问题</h2>
 <div class="outline-text-2" id="text-34">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-12 Sun 12:41] </span></span> <br />
@@ -737,8 +737,8 @@ cb9354f * i4 i4问题readme提交
 </ul>
 </div>
 </div>
-<div id="outline-container-org8d4f153" class="outline-2">
-<h2 id="org8d4f153"><span class="section-number-2">35</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #6 feature 在修改密码界面，修改密码为1位数，如：0时，可以修改成功，未提示错误，修改完成后输入密码0时提示密码错误，输入修改前的密码也提示错误。</h2>
+<div id="outline-container-orgcee348e" class="outline-2">
+<h2 id="orgcee348e"><span class="section-number-2">35</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #6 feature 在修改密码界面，修改密码为1位数，如：0时，可以修改成功，未提示错误，修改完成后输入密码0时提示密码错误，输入修改前的密码也提示错误。</h2>
 <div class="outline-text-2" id="text-35">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-16 Thu 16:24] </span></span> <br />
@@ -749,8 +749,8 @@ i6 close #6</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2b41f08" class="outline-2">
-<h2 id="org2b41f08"><span class="section-number-2">36</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #7 bug 在点击进入soe查询时，边框出现系统图处有进入框显示</h2>
+<div id="outline-container-orga7b6237" class="outline-2">
+<h2 id="orga7b6237"><span class="section-number-2">36</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #7 bug 在点击进入soe查询时，边框出现系统图处有进入框显示</h2>
 <div class="outline-text-2" id="text-36">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-20 Mon 14:51] </span></span> <br />
@@ -758,11 +758,11 @@ i6 close #6</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org12619ff" class="outline-2">
-<h2 id="org12619ff"><span class="section-number-2">37</span> <span class="todo TODO">TODO</span> 模块的硬遥信与越限等遥信处理方式是不一样的，只有在变化时才会产生新的soe，如JX的DI1 如果在模块在没有上电的情况下已经为合状态，那么装置在初始化上电后仍然是合状态，而不会产生由分到合的soe。并且协议中对模块进行告警复归时也不影响相应的硬遥信状态。这样就导致HMI在处理硬遥信时需要特殊处理</h2>
+<div id="outline-container-org0794c3d" class="outline-2">
+<h2 id="org0794c3d"><span class="section-number-2">37</span> <span class="todo TODO">TODO</span> 模块的硬遥信与越限等遥信处理方式是不一样的，只有在变化时才会产生新的soe，如JX的DI1 如果在模块在没有上电的情况下已经为合状态，那么装置在初始化上电后仍然是合状态，而不会产生由分到合的soe。并且协议中对模块进行告警复归时也不影响相应的硬遥信状态。这样就导致HMI在处理硬遥信时需要特殊处理</h2>
 </div>
-<div id="outline-container-orgf771637" class="outline-2">
-<h2 id="orgf771637"><span class="section-number-2">38</span> <span class="todo TODO">TODO</span> 忘记密码后无其它办法进入参数设置界面，建议增加超级密码,交流需要做issue6的修改</h2>
+<div id="outline-container-orgbb9966d" class="outline-2">
+<h2 id="orgbb9966d"><span class="section-number-2">38</span> <span class="todo TODO">TODO</span> 忘记密码后无其它办法进入参数设置界面，建议增加超级密码,交流需要做issue6的修改</h2>
 <div class="outline-text-2" id="text-38">
 <ul class="org-ul">
 <li>State "ISSUE"      from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2017-03-21 Tue 14:56] </span></span> <br />
@@ -771,8 +771,8 @@ i6 close #6</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org44576b5" class="outline-2">
-<h2 id="org44576b5"><span class="section-number-2">39</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #8 bug HMI与底层模块波特率设置为9600bps、8E1，底层模块与HMI发生通讯中断，经过足够时间的轮询后可恢复正常（现象为进线模块时通时断，同一条总线上的YX16模块通讯正常）波特率设为38400bps时，进线与遥信模块通讯均正常</h2>
+<div id="outline-container-org1184731" class="outline-2">
+<h2 id="org1184731"><span class="section-number-2">39</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #8 bug HMI与底层模块波特率设置为9600bps、8E1，底层模块与HMI发生通讯中断，经过足够时间的轮询后可恢复正常（现象为进线模块时通时断，同一条总线上的YX16模块通讯正常）波特率设为38400bps时，进线与遥信模块通讯均正常</h2>
 <div class="outline-text-2" id="text-39">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-21 Tue 18:59] </span></span> <br />
@@ -780,8 +780,8 @@ i6 close #6</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org69728ab" class="outline-2">
-<h2 id="org69728ab"><span class="section-number-2">40</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #9 bug 将485-1和485-2的通讯线连接在一起，运行状态界面显示通讯为绿色，但实际485-2的模块未通讯。</h2>
+<div id="outline-container-org9fccd71" class="outline-2">
+<h2 id="org9fccd71"><span class="section-number-2">40</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #9 bug 将485-1和485-2的通讯线连接在一起，运行状态界面显示通讯为绿色，但实际485-2的模块未通讯。</h2>
 <div class="outline-text-2" id="text-40">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-21 Tue 20:49] </span></span> <br />
@@ -796,8 +796,8 @@ i6 close #6</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd00cc87" class="outline-2">
-<h2 id="orgd00cc87"><span class="section-number-2">41</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #10 bug 进线数据查询界面，开关量状态处名称显示不全</h2>
+<div id="outline-container-org1392f63" class="outline-2">
+<h2 id="org1392f63"><span class="section-number-2">41</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #10 bug 进线数据查询界面，开关量状态处名称显示不全</h2>
 <div class="outline-text-2" id="text-41">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2017-03-22 Wed 15:27] </span></span> <br />
@@ -805,8 +805,8 @@ i6 close #6</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2c7bb1a" class="outline-2">
-<h2 id="org2c7bb1a"><span class="section-number-2">42</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #11 bug 直流在进入历史界面时，向前翻页是可以点击的状态</h2>
+<div id="outline-container-orgfb00334" class="outline-2">
+<h2 id="orgfb00334"><span class="section-number-2">42</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #11 bug 直流在进入历史界面时，向前翻页是可以点击的状态</h2>
 <div class="outline-text-2" id="text-42">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-22 Wed 16:11] </span></span> <br />
@@ -817,8 +817,8 @@ i6 close #6</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1dd2172" class="outline-2">
-<h2 id="org1dd2172"><span class="section-number-2">43</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #12 bug 在系统参数界面向后翻页，然后向前翻页，第一页为查询状态</h2>
+<div id="outline-container-org7bdc0d2" class="outline-2">
+<h2 id="org7bdc0d2"><span class="section-number-2">43</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #12 bug 在系统参数界面向后翻页，然后向前翻页，第一页为查询状态</h2>
 <div class="outline-text-2" id="text-43">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-22 Wed 17:00] </span></span> <br />
@@ -829,8 +829,8 @@ i6 close #6</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org65c4db9" class="outline-2">
-<h2 id="org65c4db9"><span class="section-number-2">44</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> 在进入历史数据界面时不显示页数</h2>
+<div id="outline-container-org3dd6966" class="outline-2">
+<h2 id="org3dd6966"><span class="section-number-2">44</span> <span class="done ISSUECLOSE">ISSUECLOSE</span> #13 bug 在进入历史数据界面时不显示页数</h2>
 <div class="outline-text-2" id="text-44">
 <ul class="org-ul">
 <li>State "ISSUECLOSE" from "ISSUE"      <span class="timestamp-wrapper"><span class="timestamp">[2017-03-22 Wed 19:18] </span></span> <br />
@@ -848,7 +848,7 @@ State "ISSUE"      from "TODO"       <span class="timestamp-wrapper"><span class
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2017-03-23 Thu 09:47</p>
+<p class="date">Created: 2017-03-23 Thu 10:22</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
