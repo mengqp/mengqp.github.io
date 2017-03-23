@@ -1,39 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-  <head>
-    <title>个人主页登陆</title>
-    <script language=javascript type="text/javascript">
-      function toopen(){
-      if(document.getElementById("password").value=="esdtek"){
-      <!-- document.forms[0].action="home.html"; -->
-      <!-- window.location.href="home.html"; -->
-      window.open ('home.html')
-      <!-- document.forms[0].submit(); -->
-      return true;
-      }else{
-      alert("密码不正确！")
-      return false;
-      }
-      }
-    </script>
-  </head>
-  <body class="img">
-    <div class="wrapper">
-      <div class="loginBox">
-        <div class="loginBoxCenter">
-          <form method="post" action="index.html" name="myform" >
-            <!-- <p><label for="username">用户名：</label></p> -->
-            <!-- <p>531680742</p> -->
-            <p><label for="password">密码：</p>
-            <p><input type="password" id="password" name="password" class="loginInput" placeholder="请输入密码" value=""
+<!-- <html> -->
+<!--   <head> -->
+<!--     <title>个人主页登陆</title> -->
+<!--     <script language=javascript type="text/javascript"> -->
+<!--       function toopen(){ -->
+<!--       if(document.getElementById("password").value=="esdtek"){ -->
+<!--       <\!-- document.forms[0].action="home.html"; -\-> -->
+<!--       <\!-- window.location.href="home.html"; -\-> -->
+<!--       window.open ('home.html') -->
+<!--       <\!-- document.forms[0].submit(); -\-> -->
+<!--       return true; -->
+<!--       }else{ -->
+<!--       alert("密码不正确！") -->
+<!--       return false; -->
+<!--       } -->
+<!--       } -->
+<!--     </script> -->
+<!--   </head> -->
+<!--   <body class="img"> -->
+<!--     <div class="wrapper"> -->
+<!--       <div class="loginBox"> -->
+<!--         <div class="loginBoxCenter"> -->
+<!--           <form method="post" action="index.html" name="myform" > -->
+<!--             <\!-- <p><label for="username">用户名：</label></p> -\-> -->
+<!--             <\!-- <p>531680742</p> -\-> -->
+<!--             <p><label for="password">密码：</p> -->
+<!--             <p><input type="password" id="password" name="password" class="loginInput" placeholder="请输入密码" value="" -->
 
-                      /></p>         </div>
-        <div class="loginBoxButtons">
-          <input type="submit" value="登陆" class="loginBtn" onclick="return toopen();">
-        </form>
-        </div>
-      </div>
-    </div>
-  </body>
+<!--                       /></p>         </div> -->
+<!--         <div class="loginBoxButtons"> -->
+<!--           <input type="submit" value="登陆" class="loginBtn" onclick="return toopen();"> -->
+<!--         </form> -->
+<!--         </div> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </body> -->
+
+<SCRIPT LANGUAGE="JavaScript">
+  function password() {
+  var testV = 1;
+  var pass1 = prompt('请输入密码(logo):','');
+  while (testV < 3) {
+                 if (!pass1)
+                 history.go(-1);
+                 if (pass1 == "esdtek") {
+                 alert('密码正确!');
+                 window.location.href="https://mengqp.coding.me/ek/home.html";
+                 break;
+                 }
+                 testV+=1;
+                 var pass1 =
+                 prompt('密码错误!请重新输入:');
+                 }
+                 if (pass1!="password" & testV ==3)
+                 history.go(-1);
+                 return " ";
+                 }
+                 document.write(password());
+                 </SCRIPT>
