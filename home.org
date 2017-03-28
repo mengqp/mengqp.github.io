@@ -1,2 +1,3 @@
 [[file:epduhmi/readme.html][ePDU-HMI]]
-[[http://mengqp.coding.me/web-770][EM770-B]]
+
+[[http://mengqp.coding.me/web-770/readme.html][EM770-B]]
