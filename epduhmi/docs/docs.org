@@ -1,14 +1,11 @@
-#+TITLE: epdu-hmi相关内容
+#+TITLE: 针对一些常用功能的介绍使用
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../../css/readtheorg.css" />
 #+OPTIONS: ^:nil
 
 
 * Table of Contents                                         :TOC_4_org:noexport:
 
-* 版本信息
 
-* 功能说明
-  - [[./docs/程序升级.html][程序升级]]
-  - [[./docs/docs.html][功能说明]]
-
-* 问题列表
+* 升级
+  - [[./config-update/update.html][工程文件升级]]
+  - [[./param-update/update.html][配置文件升级]]
