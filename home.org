@@ -2,4 +2,4 @@
 
 [[http://mengqp.coding.me/web-770/readme.html][EM770-B]]
 
-[[http://mengqp.coding.me/web-emu2000][EMU2000]]
+[[http://mengqp.coding.me/web-emu2000/readme.html][EMU2000]]
