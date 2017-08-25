@@ -9,3 +9,4 @@
 * 升级
   - [[./config-update/update.html][工程文件升级]]
   - [[./param-update/update.html][配置文件升级]]
+  - [[./prog-update/update.html][运行程序升级]]
